@@ -1,0 +1,11 @@
+Bootstrap: docker
+From: tensorflow/tensorflow:2.7.1-gpu
+
+%post
+    python3 -m pip install -r "requirements.txt"
+
+%environment
+    export TF_FORCE_GPU_ALLOW_GROWTH=true
+
+%runscript
+    python shap_experiment.py

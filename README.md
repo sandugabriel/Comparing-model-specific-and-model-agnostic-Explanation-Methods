@@ -1,2 +1,2 @@
-# Comparing-model-specific-and-model-agnostic-Explanation-Methods
-Master thesis
+# Dizertatie
+Comparison of model-agnostic and model-specific explanation methods in NLP
