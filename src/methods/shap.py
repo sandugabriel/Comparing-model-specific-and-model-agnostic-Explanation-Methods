@@ -103,3 +103,7 @@ class ShapExplainer:
         m = np.array(monotonicity_array)
 
         return np.mean(m)
+    
+    def generate_importance_dataset(self, texts, save = False):
+        word_importances = self.explainer(texts)
+        return word_importances
