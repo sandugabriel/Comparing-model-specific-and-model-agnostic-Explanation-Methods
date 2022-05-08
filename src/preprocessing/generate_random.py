@@ -8,5 +8,5 @@ def generate_random_labels(data_path, label_col):
     return data
 
 if __name__ == "__main__":
-    randomized_train = generate_random_labels("../../data/train.csv")
+    randomized_train = generate_random_labels("../../data/train.csv", 'label')
     randomized_train.to_csv('randomized.csv')
